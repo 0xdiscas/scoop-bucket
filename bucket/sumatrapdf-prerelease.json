@@ -29,5 +29,16 @@
     ]
   ],
   "persist": "SumatraPDF-settings.txt",
+  "checkver": {
+      "url": "https://www.sumatrapdfreader.org/prerelease.html",
+      "regex": "Version\\s+([\\d]+)\\s+"
+  },
+  "autoupdate": {
+      "architecture": {
+          "64bit": {
+              "url": "https://files2.sumatrapdfreader.org/software/sumatrapdf/prerel/$version/SumatraPDF-prerel-64.exe"
+          }
+      }
+  },
   "notes": ""
 }
