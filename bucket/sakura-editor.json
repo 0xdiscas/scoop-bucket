@@ -52,11 +52,11 @@
         "Plugins"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/sakura-editor/sakura/releases/latest",
-        "regex": "\"browser_download_url\": *\"(?<filename>https://github.com/sakura-editor/sakura/releases/download/v([0-9.]+)/.+-Release-Exe.zip)\""
+        "github": "https://github.com/sakura-editor/sakura",
+        "regex": "(?<file>sakura-tag-v(?<version>[\\d.]+)-[\\w-]*-Exe\\.zip)"
     },
     "autoupdate": {
-        "url": "$matchFilename",
+        "url": "https://github.com/sakura-editor/sakura/releases/download/v$version/$match.file",
         "hash": {
             "url": "$url.md5",
             "regex": "$md5"

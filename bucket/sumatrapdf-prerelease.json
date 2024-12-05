@@ -1,0 +1,33 @@
+{
+  "version": "16779",
+  "description": "Free PDF, eBook reader.",
+  "homepage": "https://www.sumatrapdfreader.org/prerelease.html",
+  "architecture": {
+    "64bit": {
+      "url": "https://files2.sumatrapdfreader.org/software/sumatrapdf/prerel/16779/SumatraPDF-prerel-64.exe",
+      "hash": "0923D4803747955DA7841B4FF31C69B5506AD90F9CF2984CFC20ECE2E2F713D8"
+    }
+  },
+  "pre_install": [
+    "$file = 'SumatraPDF-settings.txt'",
+    "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+    "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+    "    $CONT = @('CheckForUpdates = false')",
+    "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
+    "}"
+  ],
+  "bin": [
+    [
+      "SumatraPDF-prerel-64.exe",
+      "SumatraPDF"
+    ]
+  ],
+  "shortcuts": [
+    [
+      "SumatraPDF-prerel-64.exe",
+      "SumatraPDF"
+    ]
+  ],
+  "persist": "SumatraPDF-settings.txt",
+  "notes": ""
+}
