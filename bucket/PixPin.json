@@ -1,10 +1,10 @@
 {
-    "version": "1.9.11.4",
+    "version": "1.9.11.5",
     "description": "(Beta version) A powerful screenshot tool with Annotation,Pin to Screen, Scroll Screenshot, OCR and GIF features.",
     "homepage": "https://pixpinapp.com/",
     "license": "Proprietary",
-    "url": "https://download.pixpinapp.com/PixPin_1.9.11.4.zip",
-    "hash": "c0b536dac6b272829e96996dd5704a2a236b737f779168cbd2938ab4d153ca22",
+    "url": "https://download.pixpinapp.com/PixPin_1.9.11.5.zip",
+    "hash": "534e6f021fdeea965304d211c84071ea722b14b37516867be3820599723a1b44",
     "extract_dir": "PixPin",
     "bin": [
         [
